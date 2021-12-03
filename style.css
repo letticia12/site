@@ -1,0 +1,169 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Akronim', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+
+:root {
+    --corprimaria: black;
+    --corsecundaria: rgb(15, 6, 51);
+    --titulosgrandes: 'Playfair Display', serif;
+    --subtitulos: 'Akronim', sans-serif;
+    --paragrafos: 'Playfair Display', serif;
+  
+  }
+  
+  header {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    background-color: var(--corprimaria);
+    padding: 4px;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  body {
+    margin: 0px;
+    background-color: rgb(49, 10, 10);
+  }
+  
+  h2 {
+    font-family: 'Akronim', sans-serif;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  h1 {
+    font-family: var(--paragrafos);
+  }
+  
+  nav {
+    background-color: var(--corsecundaria);
+  }
+  
+  @media screen and (max-width: 600px) {
+    nav{
+      display: none;
+    }
+    
+    input:checked ~ nav {
+      display: block;
+    }
+    input:checked ~ .btmenu {
+      display: none;
+    }
+    input:checked ~ .btfechar {
+      display: block;
+    }
+    .btmenu {
+      display: block;
+    }
+  
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--corsecundaria);
+  
+  }
+  
+  li a, .drop {
+    display: block;
+    color: white;
+    padding: 15px 17px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .menusecundario:hover .drop {
+    background-color: var(--corterciaria);
+    transition-duration: 0.4s;
+    color: rgb(14, 13, 13);
+    cursor: pointer;
+  }
+  
+  .dropcontent {
+    display: none;
+    position: absolute;
+    background-color: var(--corsecundaria);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropcontent ul{
+    color: var(--comterciaria2);
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+
+  main a {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    background-color: var(--corsecundaria);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+  
+  main a:hover, input[type=submit]:hover {
+    background-color: var(--corterciaria);
+    color: black;
+    box-shadow: 0 14px 18px 0 black,0 18px 50px 0 black;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  footer {
+    font-family:var(--paragrafos); 
+    font-style: oblique;
+    margin-top: 60px;
+    background-color:var(--corprimaria) ;
+    transition-duration: 0.6s;
+    color: rgb(37, 201, 223);
+  }
+  
+  footer a:hover {
+    transition-duration: 0.6s;
+    background-color:var(--corterciaria) ;
+    color: red;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .autor {
+    display: block;
+    text-align: center;
+    font-family:var(--paragrafos) ;
+    font-size: 30px;
+    padding: 2em;
+  }
+  
+  .autor .autorinf {
+    margin: 4px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  main {
+    display: block;
+    font-family: var(--paragrafos);
+  }
+  

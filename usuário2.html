@@ -1,0 +1,135 @@
+<html lang="pt-br">
+<head>
+    <meta charsed="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo site.jpg" type="image/x-icon">
+    <title>Cadastro de Usuário</title>
+    <link  href = " https://fonts.googleapis.com/icon?family=Material+Icons " rel = " stylesheet " >
+    <link  rel = "stylesheet" href = "style2.css">
+    <link  rel = " stylesheet " href = " https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Playfair%20Display">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo site.jpg" alt="logo">
+        <h1>Cadastro de Usuário</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="menusecundario">
+                <a class="drop" href="index2.html">Início</a>
+                <ul class="dropcontent">
+                    <li><a href="index2.html#enredo">Enredo</a></li>
+                    <li><a href="index2.html#universo">Universo</a></li>
+                    <li><a href="index2.html#macusa">Macusa</a></li>
+                    <li><a href="index2.html#ilvermorny">Ilvermorny</a></li>
+                    <li><a href="index2.html#lançamento">Lançamento</a></li>
+                    <li><a href="index2.html#marketing">Marketing</a></li>
+                    <li><a href="index2.html#elenco">Elenco</a></li>
+                    <li><a href="index2.html#sequências">Sequências</a></li>
+                </ul>
+            </li>
+            <li class="menusecundario">
+                <a href="adm2.html">Administração</a>
+                <ul class="dropcontent">
+                    <li><a href="usuário2.html">Usuários</a></li>
+                </ul>
+            <li>
+                <a href="autor2.html">Sobre o autor</a>
+            </li>
+            <li>
+                <a href="usuário.html" id="lgtmd"><i class="material-icons">light_mode</i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="paiform">
+        <h1 class="tituloform">Cadastros de Usuários</h1>
+        <form action="" method="post">
+            <div>
+                <label for="nome">Primeiro nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+            <div>
+                <label for="email">Digite um email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="confirmemail">Confirme seu email:</label>
+                <input type="email" name="confirmemail" id="confirmemail">
+            </div>
+            <div>
+                <label for="senha">Crie uma senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <div>
+                <label for="confirmesenha">Confirme sua senha:</label>
+                <input type="password" name="confirmesenha" id="confirmesenha">
+            </div> 
+            <div>
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" name="nascimento" id="nascimento" max="2021-01-02">
+            </div>
+            <div class="radio">
+                <span class="int">Sexo:</span> 
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino" class="labelradio">Masculino</label>
+                    
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino" class=labelradio>Feminino</label>
+                    
+                <input type="radio" id="indefinido" name="sexo" value="indefinido">
+                <label for="indefinido" class="labelradio">Prefiro não dizer.</label>
+            </div>
+            <div>
+                <a href="#">Registrar</a>
+            </div>
+        </form>
+
+        <table>
+            <h1 class="tituloform">Lista de usuários cadastrados</h1>
+                <tr>
+                <th colspan="">Usuários cadastrados</th>
+                <th>Email</th>
+                <th>Alterações</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>john.mengo@gmail.com</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Letticia Maria</td>
+                <td>letticiamaria54@gmail.com</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Leeh Hidalgo</td>
+                <td>hidalgoleeh@gmail.com</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+        </table>
+
+    </main>
+
+    <footer>
+        <a href="autor2.html">Desenvolvido por: Lettícia Maria</a>
+    </footer> 
+
+</body>
+</html>
